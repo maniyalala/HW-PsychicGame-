@@ -27,6 +27,7 @@
         document.querySelector(".guessesLeft").innerHTML = "Guesses left: " + guessesLeft;
         document.querySelector(".guessesSoFar").innerHTML = "Guesses so far: ";
         return false;
+        userGuesses = [];
         }
 
       if ((userGuess != computerGuess)) {
@@ -35,7 +36,6 @@
         document.querySelector(".guessesLeft").innerHTML = "Guesses left: " + guessesLeft;
         console.log("The user picked " + userGuess); 
         document.querySelector(".guessesSoFar").innerHTML = "Guesses so far: " + userGuesses;
-
       }
 
       if ((guessesLeft < 1)) {
@@ -44,7 +44,7 @@
          document.querySelector(".losses").innerHTML = "Losses: " + losses;
          document.querySelector(".guessesLeft").innerHTML = "Guesses left: " + guessesLeft;
          document.querySelector(".guessesSoFar").innerHTML = "Guesses so far: ";
-
+        userGuesses = [];
       }     
     }
       // Randomly chooses a choice from the options array. This is the Computer's guess.
